@@ -4,6 +4,7 @@
   background: @main-bg;
   border-bottom: 2px dashed @navigation-border;
   position: fixed;
+  z-index: 10;
 
   .nav-container {
     height: 100%;
@@ -42,3 +43,13 @@
     }
   }
 } // .main-navigation
+
+.hideNav {
+  transform: translateY(-100px);
+  transition-duration: 1s;
+}
+
+.showNav {
+  transform: translateX(0);
+  transition-duration: .7s;
+}
